@@ -4,7 +4,7 @@
 
 ## Project Intro/Objective
 
-The purpose of this project is using smtplib package to email friends for thier birthdays.
+The purpose of this project is using smtplib package to email friends for thier birthdays and make the code run on the cloud.
 
 ### Packages Used
 * smtplib
@@ -29,6 +29,7 @@ it will pick a random letter and GIF to email it to the lucky person. 🥳🎉
 - Pick one of GIF images
 - Email the letter to the birthday person
 - Using time to delay 
+- run the code on pythonanywhere
 
 
  ![gif image](https://media.giphy.com/media/5sgUUvcbSmY12/giphy.gif)
