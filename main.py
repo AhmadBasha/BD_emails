@@ -26,7 +26,12 @@ if len(new_df.loc[new_df['month'] == current_month]) > 0:
             # reading the file
             letter_contents = letter_file.read()
             # replace [NAME] with actual name on the data
-            the_letter = letter_contents.replace("[NAME]", new_df["name"][i])
+            if len(new_df["name"]) > 1:
+                the_letter = letter_contents.replace("[NAME]", new_df["name"][i])
+                the_email = new_df["email"][i]
+            else:
+                the_letter = letter_contents.replace("[NAME]", new_df["name"].item())
+                the_email = new_df["email"].item()
             # here to replace the GIF from the imported pyhton files
             the_letter = the_letter.replace("[GIF IMAGE]", random.choice(gif_images))
             # here start using smtplib package to send the letter
@@ -39,7 +44,7 @@ if len(new_df.loc[new_df['month'] == current_month]) > 0:
                 # create the msg
                 msg = MIMEText(the_letter, 'html')
                 msg["From"] = "Ahmedbashatest1@gmail.com"
-                msg["To"] = new_df["email"][i]
+                msg["To"] = the_email
                 msg["Subject"] = "Happy Birthday !!!🎊"
                 # send the email
                 con.send_message(msg)
