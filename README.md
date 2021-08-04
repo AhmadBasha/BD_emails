@@ -21,7 +21,7 @@ Reading the data and check the current day and month, if the day and month match
 it will pick a random letter and GIF to email it to the lucky person. 🥳🎉
 
 
-## Contents
+## Content
 
 - Reading the data
 - Check the current date
@@ -33,6 +33,13 @@ it will pick a random letter and GIF to email it to the lucky person. 🥳🎉
 
 
  ![gif image](https://media.giphy.com/media/5sgUUvcbSmY12/giphy.gif)
+
+
+## Output
+<img src='output/first.png' style="align:middle"/>
+<img src='Images/second.png' style="align:middle"/>
+
+
 
 
 
