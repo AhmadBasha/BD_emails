@@ -36,7 +36,7 @@ it will pick a random letter and GIF to email it to the lucky person. 🥳🎉
 
 
 ## Output
-<img src='output/first.png' style="align:middle" height="300" width="100" /> <img src='output/second.png' style="align:middle" height="300" width="100"/ >
+<img src='output/first.png' style="align:middle" height="600" width="300" /> <img src='output/second.png' style="align:middle" height="600" width="300" />
 
 
 
